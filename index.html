@@ -1,13 +1,79 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title>Home</title>
+	<title>Local Weather</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- font awesome link-->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- linking styles.css file -->
+	<link rel="stylesheet" type="text/css" href="Styles/style.css">
 </head>
 <body>
-<p> This is my home page  aaaaaaaaaaaa</p>
-<section>
-<header> App</header>
-	<p></p>
-</section>
+	<header class=" text-center navbar navbar-default navbar-fixed-top">
+		<h2>Local Weather</h2>
+	</header>
+	
+	<div class="container text-center">
+		<div id="Weather"  >
+			<div class="col-md-12">
+				<h4 >
+				 <span class="col-md-offset-3 col-md-3">City</span>
+				 <span class="col-md-3"><li id="city" class="btn btn-default"></li></span>
+			   </h4>	
+			</div>
+
+			<div class="col-md-12">
+				<h4> 
+					<span class="col-md-offset-3 col-md-3 ">Weather Description</span>
+					<span class="col-md-3"><li id="weatherType" class="btn btn-default "></li></span>
+					 
+				</h4>	
+			</div>
+
+			<div class="col-md-12">
+				<h4>
+					<span class="col-md-offset-3 col-md-3 ">Temparature</span>	
+					<span class="col-md-3"><li id="ftemp" class="btn btn-default "></li></span>
+				</h4>
+			</div>
+
+			<div class="col-md-12">
+				<h4>
+					<span class="col-md-offset-3 col-md-3">WindSpeed</span>	
+					<span class="col-md-3"> <li id="windSpeed" class="btn btn-default"></li></span>
+				</h4>
+			</div>
+			
+			<div class="col-md-12">
+				<h4>
+					<span class="col-md-offset-3 col-md-3">Humidity</span>	
+					<span class="col-md-3"><li id="humidity" class="btn btn-default"></li></span>
+				</h4>				
+			</div>
+			
+			<div class="col-md-12">
+				<h4>
+					<span class="col-md-offset-3 col-md-3">Sunrise</span>	
+					<span class="col-md-3"><li id="sunrise" class="btn btn-default"></li>	</span>
+				</h4>
+			</div>
+
+			<div class="col-md-12">
+				<h4>
+					<span class="col-md-offset-3 col-md-3">Sunset</span>	
+					<span class="col-md-3"><li id="sunset" class="btn btn-default"></li></span>
+				 </h4>
+			</div>
+
+		</div> <!-- weather div end -->
+	</div>   <!-- conatiner end -->
+	<script type="text/javascript" src="Scripts/app.js"></script>	
+	<footer class="navbar navbar-default navbar-fixed-bottom text-center ftr">
+		<h4>gmr90 &copy; 2017</h4>
+	</footer>
 </body>
 </html>
